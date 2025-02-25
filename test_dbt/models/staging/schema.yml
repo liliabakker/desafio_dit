@@ -1,0 +1,118 @@
+version: 2
+
+models:
+  - name: selecionar_dados_ficha_a_desafio
+    description: "Modelo que seleciona os dados mais recentes para cada id_paciente a partir da tabela staging.dados_ficha_a_desafio."
+    columns:
+      - name: id_paciente
+        description: "Identificador único do paciente."
+        tests:
+          - not_null
+          - unique
+      - name: sexo
+        description: "Sexo do paciente."
+      - name: obito
+        description: "Indicação de óbito do paciente."
+      - name: bairro
+        description: "Nome do bairro onde o paciente reside."
+      - name: raca_cor
+        description: "Descrição da raça/cor do paciente."
+      - name: ocupacao
+        description: "Ocupação exercida pelo paciente."
+      - name: religiao
+        description: "Religião exercida pelo paciente."
+      - name: luz_eletrica
+        description: "Indicação se a residência do paciente possui luz elétrica."
+      - name: data_cadastro
+        description: "Data de cadastro do paciente."
+      - name: escolaridade
+        description: "Nível de escolaridade do paciente."
+      - name: nacionalidade
+        description: "Nacionalidade do paciente."
+      - name: renda_familiar
+        description: "Renda familiar do paciente."
+      - name: data_nascimento
+        description: "Data de nascimento do paciente."
+      - name: em_situacao_de_rua
+        description: "Indicação se o paciente está em situação de rua."
+      - name: frequenta_escola
+        description: "Indicação se o paciente frequenta escola."
+      - name: meios_transporte
+        description: "Meios de transporte utilizados pelo paciente."
+      - name: doencas_condicoes
+        description: "Doenças ou condições de saúde do paciente."
+      - name: identidade_genero
+        description: "Identidade de gênero do paciente."
+      - name: meios_comunicacao
+        description: "Meios de comunicação utilizados pelo paciente."
+      - name: orientacao_sexual
+        description: "Orientação sexual do paciente."
+      - name: possui_plano_saude
+        description: "Indicação se o paciente possui plano de saúde."
+      - name: em_caso_doenca_procura
+        description: "Indicação sobre quem o paciente procura em caso de doença."
+      - name: situacao_profissional
+        description: "Situação profissional do paciente."
+      - name: vulnerabilidade_social
+        description: "Vulnerabilidades sociais do paciente."
+      - name: data_atualizacao_cadastro
+        description: "Data da última atualização cadastral do paciente."
+      - name: familia_beneficiaria_auxilio_brasil
+        description: "Indicação se a família do paciente é beneficiária do Auxílio Brasil."
+      - name: crianca_matriculada_creche_pre_escola
+        description: "Indicação se a criança está matriculada em creche ou pré-escola."
+      - name: altura
+        description: "Altura medida do paciente."
+      - name: peso
+        description: "Peso medido do paciente."
+      - name: pressao_sistolica
+        description: "Pressão sistólica medida do paciente."
+      - name: pressao_diastolica
+        description: "Pressão diastólica medida do paciente."
+      - name: n_atendimentos_atencao_primaria
+        description: "Quantidade de atendimentos na atenção primária no último ano."
+      - name: n_atendimentos_hospital
+        description: "Quantidade de atendimentos no hospital no último ano."
+      - name: updated_at
+        description: "Data e hora da última atualização dos dados do paciente."
+      - name: tipo
+        description: "Identifica se o dado veio de fluxo rotineiro ou histórico."
+  - name: transformar_dados_colunas
+    description: "Modelo que substitui os valores true por 1 e false por 0 em colunas específicas."
+    columns:
+      - name: id_paciente
+        description: "Identificador único do paciente."
+        tests:
+          - not_null
+          - unique
+      - name: obito
+        description: "Indicação de óbito do paciente. Valores: 1 para true e 0 para false."
+      - name: luz_eletrica
+        description: "Indicação se a residência do paciente possui luz elétrica. Valores: 1 para true e 0 para false."
+      - name: data_cadastro
+        description: "Data de cadastro do paciente. Transformada para timestamp."
+      - name: data_nascimento
+        description: "Data de nascimento do paciente. Transformada para data."
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                - by_condition: "data_nascimento IS NOT NULL"
+      - name: em_situacao_de_rua
+        description: "Indicação se o paciente está em situação de rua. Valores: 1 para true e 0 para false."
+      - name: possui_plano_saude
+        description: "Indicação se o paciente possui plano de saúde. Valores: 1 para true e 0 para false."
+      - name: vulnerabilidade_social
+        description: "Vulnerabilidades sociais do paciente. Valores: 1 para true e 0 para false."
+      - name: data_atualizacao_cadastro
+        description: "Data da última atualização cadastral do paciente. Transformada para timestamp."
+      - name: familia_beneficiaria_auxilio_brasil
+        description: "Indicação se a família do paciente é beneficiária do Auxílio Brasil. Valores: 1 para true e 0 para false."
+      - name: crianca_matriculada_creche_pre_escola
+        description: "Indicação se a criança está matriculada em creche ou pré-escola. Valores: 1 para true e 0 para false."
+      - name: updated_at
+        description: "Data e hora da última atualização dos dados do paciente. Transformada para timestamp."
+models:
+  - name: renda_familiar_filtrada
+    description: "Modelo que seleciona os dados diferentes de 'Manhã' ou 'Internet' na coluna renda_familiar."
+
