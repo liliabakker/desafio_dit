@@ -11,7 +11,7 @@
 
 ### Solução do Desafio:
 
-Para resolver o desafio proposto, foi criado um banco de dados utilizando PostgreSQL. A estrutura do projeto no dbt foi organizada em três camadas dentro da pasta models, facilitando a gestão e compreensão do fluxo de dados:
+Para resolver o desafio proposto, foi criado um banco de dados utilizando PostgreSQL e o ambiente vitrual com python. A estrutura do projeto no dbt foi organizada em três camadas dentro da pasta models, facilitando a gestão e compreensão do fluxo de dados:
 
  - Staging:
 
