@@ -9,6 +9,10 @@
  - SQL
  - dbt
 
+### Dados:
+
+Os dados utilizados no desafio encontram-se na pasta Analises, onde foi realizada uma análise prévia para compreensão dos dados no arquivo 'analise_dados.ipynb' e o envio dos dados para o banco Postgres no arquivo 'load.py'.
+
 ### Solução do Desafio:
 
 Para resolver o desafio proposto, foi criado um banco de dados utilizando PostgreSQL e o ambiente vitrual com python. A estrutura do projeto no dbt foi organizada em três camadas dentro da pasta models, facilitando a gestão e compreensão do fluxo de dados:
