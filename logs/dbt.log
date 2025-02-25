@@ -1,0 +1,117 @@
+[0m13:42:38.908373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF763976D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF763CA5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF76397110>]}
+
+
+============================== 13:42:38.965437 | a8c7845c-6815-4625-9fc2-65b98c571519 ==============================
+[0m13:42:38.965437 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:42:38.965437 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\lilia\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:43:24.824579 [debug] [MainThread]: Starter project path: D:\exercicios\desafio_dit\dbt-env\Lib\site-packages\dbt\include\starter_project
+[0m13:43:25.268159 [info ] [MainThread]: 
+Your new dbt project "dbt_test" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:43:25.268159 [info ] [MainThread]: Setting up your profile.
+[0m13:43:37.911266 [debug] [MainThread]: Command `dbt init` succeeded at 13:43:37.911266 after 59.20 seconds
+[0m13:43:37.913175 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF7639D010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF7640AD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BF76408B10>]}
+[0m13:43:37.913175 [debug] [MainThread]: Flushing usage events
+[0m13:43:38.916603 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:43:57.900282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4287A7250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4263B1290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4287DA090>]}
+
+
+============================== 13:43:57.904291 | 69ac3e7e-c7fd-4ddb-8c24-4c8b777ddfe2 ==============================
+[0m13:43:57.904291 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:43:57.904291 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\lilia\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:44:03.605518 [debug] [MainThread]: Starter project path: D:\exercicios\desafio_dit\dbt-env\Lib\site-packages\dbt\include\starter_project
+[0m13:44:03.631472 [info ] [MainThread]: 
+Your new dbt project "test_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:44:03.631472 [info ] [MainThread]: Setting up your profile.
+[0m13:45:18.548876 [info ] [MainThread]: Profile test_dbt written to C:\Users\lilia\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:45:18.551841 [debug] [MainThread]: Command `dbt init` succeeded at 13:45:18.551841 after 80.81 seconds
+[0m13:45:18.552771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C422457E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4284E0290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C4287A7B10>]}
+[0m13:45:18.554257 [debug] [MainThread]: Flushing usage events
+[0m13:45:19.531484 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:45:27.502496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BD40536CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BD40537190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BD40537B10>]}
+
+
+============================== 13:45:27.518247 | a01d2826-8ca5-4c8e-8bb7-7d22e24a1494 ==============================
+[0m13:45:27.518247 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:45:27.518247 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\lilia\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m13:45:27.655754 [info ] [MainThread]: dbt version: 1.9.2
+[0m13:45:27.655754 [info ] [MainThread]: python version: 3.11.9
+[0m13:45:27.655754 [info ] [MainThread]: python path: D:\exercicios\desafio_dit\dbt-env\Scripts\python.exe
+[0m13:45:27.655754 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m13:45:27.760613 [info ] [MainThread]: Using profiles dir at C:\Users\lilia\.dbt
+[0m13:45:27.760613 [info ] [MainThread]: Using profiles.yml file at C:\Users\lilia\.dbt\profiles.yml
+[0m13:45:27.760613 [info ] [MainThread]: Using dbt_project.yml file at D:\exercicios\desafio_dit\dbt_project.yml
+[0m13:45:27.760613 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m13:45:27.767906 [debug] [MainThread]: Command `dbt debug` failed at 13:45:27.767906 after 0.41 seconds
+[0m13:45:27.767906 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BD40357250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BD4053CF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BD405A8890>]}
+[0m13:45:27.767906 [debug] [MainThread]: Flushing usage events
+[0m13:45:28.645371 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:47:47.408626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259B16FD7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259B16FD990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259B16FECD0>]}
+
+
+============================== 13:47:47.482935 | 839d7361-f7a2-4e84-a30b-4957d5d41462 ==============================
+[0m13:47:47.482935 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:47:47.492511 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\lilia\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:47:47.579671 [info ] [MainThread]: dbt version: 1.9.2
+[0m13:47:47.579671 [info ] [MainThread]: python version: 3.11.9
+[0m13:47:47.579671 [info ] [MainThread]: python path: D:\exercicios\desafio_dit\dbt-env\Scripts\python.exe
+[0m13:47:47.579671 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m13:47:47.770075 [info ] [MainThread]: Using profiles dir at C:\Users\lilia\.dbt
+[0m13:47:47.771140 [info ] [MainThread]: Using profiles.yml file at C:\Users\lilia\.dbt\profiles.yml
+[0m13:47:47.771688 [info ] [MainThread]: Using dbt_project.yml file at D:\exercicios\desafio_dit\dbt_project.yml
+[0m13:47:47.772899 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m13:47:47.774532 [debug] [MainThread]: Command `dbt debug` failed at 13:47:47.774532 after 0.52 seconds
+[0m13:47:47.775740 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259B174F550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259B17F0650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259B17DF2D0>]}
+[0m13:47:47.776419 [debug] [MainThread]: Flushing usage events
+[0m13:47:48.726341 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:50:08.539699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B7A35D750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B7A35DA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B7A35ED10>]}
+
+
+============================== 13:50:08.543672 | 6d9f1614-e50c-4656-8452-29d3a98a53ff ==============================
+[0m13:50:08.543672 [info ] [MainThread]: Running with dbt=1.9.2
+[0m13:50:08.543672 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\lilia\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:50:08.575983 [info ] [MainThread]: dbt version: 1.9.2
+[0m13:50:08.579208 [info ] [MainThread]: python version: 3.11.9
+[0m13:50:08.580466 [info ] [MainThread]: python path: D:\exercicios\desafio_dit\dbt-env\Scripts\python.exe
+[0m13:50:08.581595 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m13:50:08.674752 [info ] [MainThread]: Using profiles dir at C:\Users\lilia\.dbt
+[0m13:50:08.674752 [info ] [MainThread]: Using profiles.yml file at C:\Users\lilia\.dbt\profiles.yml
+[0m13:50:08.681213 [info ] [MainThread]: Using dbt_project.yml file at D:\exercicios\desafio_dit\dbt_project.yml
+[0m13:50:08.681213 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m13:50:08.681213 [debug] [MainThread]: Command `dbt debug` failed at 13:50:08.681213 after 0.33 seconds
+[0m13:50:08.681213 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B7A3C6D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B7A3C6C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B7A3C54D0>]}
+[0m13:50:08.681213 [debug] [MainThread]: Flushing usage events
+[0m13:50:09.619074 [debug] [MainThread]: An error was encountered while trying to flush usage events
